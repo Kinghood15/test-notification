@@ -1,14 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken } from "firebase/messaging";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCP5RSVk-y17ESxoKJuSlAV3rQ61ZmJeyk",
-  authDomain: "some-firebase-97dfc.firebaseapp.com",
-  projectId: "some-firebase-97dfc",
-  storageBucket: "some-firebase-97dfc.appspot.com",
-  messagingSenderId: "440905053097",
-  appId: "1:440905053097:web:b1dd7466968bac72470ab8",
-  measurementId: "G-27PVPDKWY8",
+const firebaseConfig = { 
+  apiKey : "AIzaSyDDHZF8hXlJ7JlI3jnw79MMt0wWLVUpMWc" , 
+  authDomain : "flutter-fcm-71c08.firebaseapp.com" , 
+  projectId : "flutter-fcm-71c08" , 
+  storageBucket : "flutter-fcm-71c08.appspot.com" , 
+  messagingSenderId : "247399280756" , 
+  appId : "1:247399280756:web:fc3e9dc658e1e0b6a1e121" , 
+  measurementId : "G-BFDKWKBMRX" 
 };
 
 function requestPermission() {
@@ -21,7 +21,7 @@ function requestPermission() {
       const messaging = getMessaging(app);
       getToken(messaging, {
         vapidKey:
-          "BCKNSY0FAgDlbgevvqBGsXdadLiRCrFR1wbWXqFYgQJOV3jX8nTSHAQzXcB91c6GGlmFwCfCcxCUK_UxDL7nTLA",
+          "BATbow-QkimfB_D1T1N6kMJHPzQFtAP3lbdEoAvJKvCm5p9Ey5lIY-BJKneOD5y2aOOIQf10kBOzNPOV11MEEv0",
       }).then((currentToken) => {
         if (currentToken) {
           console.log("currentToken: ", currentToken);
