@@ -4,20 +4,21 @@ import { getAnalytics } from "firebase/analytics";
 import { toast } from 'react-toastify';
 
 const firebaseConfig = {
-  // apiKey: "AIzaSyAaMVUNQ96DWvir9kqpqYNZEh93x7SFz3A",
-  // authDomain: "test-notification-80d1d.firebaseapp.com",
-  // projectId: "test-notification-80d1d",
-  // storageBucket: "test-notification-80d1d.appspot.com",
-  // messagingSenderId: "456487913471",
-  // appId: "1:456487913471:web:a24bfc441e570bc5d7c9ca",
-  // measurementId: "G-DY5P73B4ZY"
-  apiKey : "AIzaSyDDHZF8hXlJ7JlI3jnw79MMt0wWLVUpMWc" , 
-  authDomain : "flutter-fcm-71c08.firebaseapp.com" , 
-  projectId : "flutter-fcm-71c08" , 
-  storageBucket : "flutter-fcm-71c08.appspot.com" , 
-  messagingSenderId : "247399280756" , 
-  appId : "1:247399280756:web:fc3e9dc658e1e0b6a1e121" , 
-  measurementId : "G-BFDKWKBMRX" 
+  apiKey: "AIzaSyAaMVUNQ96DWvir9kqpqYNZEh93x7SFz3A",
+  authDomain: "test-notification-80d1d.firebaseapp.com",
+  projectId: "test-notification-80d1d",
+  storageBucket: "test-notification-80d1d.appspot.com",
+  messagingSenderId: "456487913471",
+  appId: "1:456487913471:web:a24bfc441e570bc5d7c9ca",
+  measurementId: "G-DY5P73B4ZY"
+  //Teddy
+  // apiKey : "AIzaSyDDHZF8hXlJ7JlI3jnw79MMt0wWLVUpMWc" , 
+  // authDomain : "flutter-fcm-71c08.firebaseapp.com" , 
+  // projectId : "flutter-fcm-71c08" , 
+  // storageBucket : "flutter-fcm-71c08.appspot.com" , 
+  // messagingSenderId : "247399280756" , 
+  // appId : "1:247399280756:web:fc3e9dc658e1e0b6a1e121" , 
+  // measurementId : "G-BFDKWKBMRX" 
 };
 
 function requestPermission() {
@@ -31,7 +32,10 @@ function requestPermission() {
       console.log("analytics", analytics)
       getToken(messaging, {
         vapidKey:
-          "BATbow-QkimfB_D1T1N6kMJHPzQFtAP3lbdEoAvJKvCm5p9Ey5lIY-BJKneOD5y2aOOIQf10kBOzNPOV11MEEv0",
+          //Teddy
+          // "BATbow-QkimfB_D1T1N6kMJHPzQFtAP3lbdEoAvJKvCm5p9Ey5lIY-BJKneOD5y2aOOIQf10kBOzNPOV11MEEv0",
+          //Kinghood15
+          "BNa861e_c97oOyfPBDh29NwRa134nZTkRAO-cwWPieW7hF24ofD6eU-5F65rZ6WlJVUB9b9b-ec1kHz_m8M3M4s",
       }).then((currentToken) => {
         if (currentToken) {
           console.log("currentToken: ", currentToken);
