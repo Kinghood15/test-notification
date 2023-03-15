@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken } from "firebase/messaging";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import { toast } from 'react-toastify';
 
 const firebaseConfig = {
@@ -27,7 +27,7 @@ function requestPermission() {
     if (permission === "granted") {
       console.log("Notification permission granted.");
       const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
+      // const analytics = getAnalytics(app);
       const messaging = getMessaging(app);
       console.log("analytics", analytics)
       getToken(messaging, {
