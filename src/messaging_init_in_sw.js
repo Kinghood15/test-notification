@@ -29,7 +29,7 @@ function requestPermission() {
       const app = initializeApp(firebaseConfig);
       // const analytics = getAnalytics(app);
       const messaging = getMessaging(app);
-      console.log("analytics", analytics)
+      // console.log("analytics", analytics)
       getToken(messaging, {
         vapidKey:
           //Teddy
